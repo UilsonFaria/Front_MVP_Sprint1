@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Meus Discos</title>
+</head>
+
+<body>
+     <!-- Cabeçalho de informações do sistema -->
+    <header>
+        <div class="title">
+            <h2>Catálogo de Discos</h2>
+        </div>
+        <div class="banner">
+            <img src="https://http2.mlstatic.com/D_NQ_NP_616021-MLB20698520069_052016-W.jpg"
+                alt="y">
+        </div>
+    </header>
+
+     <!-- Campos para adicionar um novo disco -->
+    <section class="newDisco">
+        <input type="text" id="newArtista" placeholder="Nome do Artista:">
+        <input type="text" id="newTitulo" placeholder="Título do Disco:">
+        <input type="text" id="newGravadora" placeholder="Gravadora:">
+        <input type="text" id="newFaixas" placeholder="Faixas:">
+        <input type="text" id="newAno" placeholder="Ano:">
+        <input type="text" id="newOrigem" placeholder="País de Origem:">
+        <input type="text" id="newPromo" placeholder="Promo (S/N):">
+        <input type="text" id="newValor" placeholder="Valor de Venda:">
+        <input type="text" id="newObservacao" placeholder="Observação:">
+
+        <span onclick="newItem()" class="addBtn">Adicionar</span>
+    </section>
+
+    <!-- Tabela com discos cadastrados -->
+    <section class="discos">
+        <table id="tabDisco">
+            <tr>
+                <th>Artista</th>
+                <th>Título</th>
+                <th>Gravadora</th>
+                <th>Faixas</th>
+                <th>Ano Lançamento</th>
+                <th>Origem</th>
+                <th>Promocional (S/N)</th>
+                <th>Valor</th>
+                <th>Observação</th>
+                <th><img src="https://cdn-icons-png.flaticon.com/512/126/126468.png" width="20px" height="20px"></th>
+            </tr>
+        </table>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
